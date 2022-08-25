@@ -36,6 +36,15 @@ img:hover {
     opacity: 0.7;
 }
 
+.asd {
+    --padding: 5vw;
+    flex-direction: column;
+    padding: var(--padding);
+    padding-top: 5rem;
+    border-bottom: solid 1px #262633;
+    border-bottom: solid 1px var(--borderColor)
+}
+
 
 /* The Modal (background) */
 

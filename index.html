@@ -17,7 +17,9 @@
 </head>
 
 <body>
-
+    <audio id="audio" style="width:100%;max-width:600px;" autoplay="1" volume="1">
+        <source src="/Sound/AuthraSadly.mp3" type="audio/mp3" >
+    </audio>
     <div id="app">
 
         <main class="pages">
@@ -71,6 +73,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        document.getElementById("audio").volume = 0.05;
+
         $(".images").click(function() {
 
             let url_ = $(this).attr("src");

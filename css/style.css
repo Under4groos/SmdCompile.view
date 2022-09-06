@@ -96,3 +96,15 @@ img:hover {
         width: 100%;
     }
 }
+
+@media (width < 340px) {
+    ._div_content-buttons {
+        display: contents;
+    }
+}
+
+@media (width > 340px) {
+    ._div_content-buttons {
+        display: flex;
+    }
+}

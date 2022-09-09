@@ -7,88 +7,107 @@
     <link rel="icon" href="images/test.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmdCompile</title>
-    <style>
-        html {
-            background: #17171e
-        }
-    </style>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="js/main.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto+Condensed&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body>
+    <!-- <nav style="position: absolute; 
+    left: 0; right: 0; z-index: 3; top: 30px;
+    padding: .5rem 1rem;
+    ">
+        <div class="container">
+            <a class="navbar_brand">Пишем сайт</a>
 
-    <div id="app">
+            <a style="height: 30px;">Пишем сайт</a>
+        </div>
 
-        <main class="pages">
-            <div class="page centered">
+    </nav> -->
+    <div style="width: 100%;
+    height: 100%;
+    position: inherit;
+    z-index: 0;">
+        <div class="overlay "></div>
+        <div class="container" style="height: 4000px;">
 
-                <div class="top-menu ">
-                    <menu>
-                        <li><a target="_blank" href="https://www.youtube.com/channel/UCgkPCLfQU1wxlFo8E8EhjxQ ">Youtube</a></li>
-                        <li>
-                            <a target="_blank" href="https://vk.com/underko">VK</a>
-                        </li>
-                        <li><a target="_blank" href="https://vk.com/underko">Donate</a></li>
-                        <li><a target="_blank" href="https://developer.valvesoftware.com/wiki/Source">Source Engine</a></li>
-                    </menu>
+            <div class="slider-text align-items-center justify-content-center no-gutters row">
+
+                <div class="div_text_pre col-md-6" style="margin-top: 200px">
+
+                    <h1 class="h1_def  h1_resize">
+                        <strong style="color: #665dc3;">SmdCompile</strong> <a style="font-size: 20px;" id="last_ver"> NULL </a>
+                    </h1>
+
+                    <div>
+                        <button id="but_view_demo" class="button-30" role="button">View Demo</button>
+
+                        <button id="but_buy" class="button-30" role="button">Buy</button>
+
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <h1 style="font-size: 20px;">
+                            <strong><a target="_blank" href="https://developer.valvesoftware.com/wiki/Studiomdl">StudioMDL</a></strong> — это инструмент командной строки, используемый для компиляции моделей из промежуточных форматов, экспортированных
+                            из пакетов моделирования, в двоичный формат .mdl, который считывается движком Source
+                        </h1>
+                        <h1 style="font-size: 20px;">
+                            <strong><a href="/">SmdCompile</a></strong> - это визуальная обёртка <strong><a target="_blank" href="https://developer.valvesoftware.com/wiki/Studiomdl">StudioMDL</a></strong>
+                        </h1>
+
+                        <h1 style="font-size: 40px; margin-top: 40px; color: #f69802;">
+                            Купите программу пожалуйста!
+                        </h1>
+                    </div>
+
+                    <div style="height: 500px; margin-top: 40px;">
+
+
+                    </div>
+                    <div>
+                        <iframe class="youtube_video" src="https://www.youtube-nocookie.com/embed/EqnYnh7uubg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <table>
+                            <tr>
+                                <th>
+                                    <img style="width: 100%;" src="https://under4groos.github.io/SmdCompile.view/images/SmdCompile_odlw7RKjhf.png">
+
+                                </th>
+                                <th>
+                                    <img style="width: 100%;" src="https://under4groos.github.io/SmdCompile.view/images/SmdCompile_odlw7RKjhf.png">
+
+                                </th>
+                            </tr>
+                        </table>
+
+                        <div>
+                            <h1 style="font-size: 30px; ">
+                                <strong><a style="font-family: 'Ubuntu', sans-serif;">Преимущества</a></strong>
+                            </h1>
+                        </div>
+                        <div style="margin-top: 5px; ">
+                            <ul style="list-style: none;text-align: left!important;">
+                                <li>Удобный интерфейс</li>
+                                <li>Массовая компиляция</li>
+                                <li></li>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
-                <h1>SmdCompile</h1>
-                <h3>Конвертируй модели без проблем!</h3>
-                <img alt="image" class="images" src="images/SmdCompile_odlw7RKjhf.png ">
 
-                <div class="_div_content-buttons">
-                    <button class="upload" onclick="window.open('https://github.com/Under4groos/SmdCompile.view/releases/download/Demo/SmdCompile_Demo.zip');">
-                        <span style="font-size: 20px; padding: 5px;">Demo View</span>
-                    </button>
-                    <button class="upload" onclick="window.open('https://vk.com/underko');">
-                        <span style="font-size: 20px; padding: 5px;">Buy SC-e</span>
-                    </button>
-                </div>
 
             </div>
-            <div class="page info">
-                <h2>Компилятор моделей</h2>
-                <p>
-                    Studiomdl — это инструмент командной строки, используемый для компиляции моделей из промежуточных форматов, экспортированных из пакетов моделирования, в двоичный формат .mdl, который считывается движком Source.. a song, artificial intelligence will separate
-                    <br>
-                    <br> SmdCompile - это визуальная обёртка Studiomdl.
+        </div>
 
-
-                </p>
-
-
-            </div>
-            <div class="page centered">
-                <div>
-                    <img alt="3D render " class="images padding_5" src="images/SmdCompile_Go4bZrgCls.png">
-                    <img alt="3D render " class="images padding_5" src="images/SmdCompile_z1iPprEkVu.png ">
-                    <img alt="3D render " class="images padding_5" src="images/SmdCompile_9WSU3LS782.png ">
-                </div>
-
-            </div>
-        </main>
     </div>
-    <div id="image-viewer">
-
-        <img class="modal-content" id="full-image">
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(".images").click(function() {
-
-            let url_ = $(this).attr("src");
-            $("#full-image").attr("src", url_);
-
-            $('#image-viewer').show();
-
-
-        });
-
-        $("#image-viewer").click(function() {
-            $('#image-viewer').hide();
-        });
-    </script>
 </body>
 
 </html>

@@ -50,6 +50,7 @@ fetch('https://api.github.com/repos/Under4groos/SmdCompile.view/releases', {
         SetElement_onclick("last_ver", data[0]["html_url"]).textContent = data[0]["tag_name"]
         SetElement_onclick("but_view_demo", data[0]["assets"][0]["browser_download_url"])
         SetElement_onclick("but_buy", "https://vk.com/underko")
+        SetElement_onclick("but_doante", "https://www.donationalerts.com/r/underko")
     })
     .catch(error => console.error(error))
 

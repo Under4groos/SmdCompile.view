@@ -51,6 +51,7 @@ fetch('https://api.github.com/repos/Under4groos/SmdCompile.view/releases', {
         SetElement_onclick("but_view_demo", data[0]["assets"][0]["browser_download_url"])
         SetElement_onclick("but_buy", "https://vk.com/underko")
         SetElement_onclick("but_doante", "https://www.donationalerts.com/r/underko")
+        SetElement_onclick("but_forms", "https://docs.google.com/forms/d/e/1FAIpQLSdzefcRzC0hm4Zxb6EQVtgLfTqQcWfUBVCd2Gz4wqssJWMxEQ/viewform")
     })
     .catch(error => console.error(error))
 
